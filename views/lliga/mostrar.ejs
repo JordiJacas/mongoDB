@@ -1,0 +1,11 @@
+<p><a href="/"><- Atras</a></p>
+<% if (typeof equipo !== 'undefined') { %>
+<form>
+	<a href="/lliga/editar/<%= equipo._id %>">Editar</a>
+	<a href="/lliga/borrar/<%= equipo._id %>">Eliminar</a>
+	<p>Nombre: <span><%= equipo.Nombre %></span></p>
+	<p>Competicion: <span><%= equipo.Competicion %></span></p>
+	<p>Color1: <span><%= equipo.Color1 %></span></p>
+	<p>Color2: <span><%= equipo.Color2 %></span></p>
+</form>
+<% } %>

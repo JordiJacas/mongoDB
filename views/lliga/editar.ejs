@@ -1,0 +1,10 @@
+<a href="/lliga/ver/<%= equipos._id %>"><- Atras</a>
+<% if (typeof equipos !== 'undefined') { %>
+	<form action="/lliga/editar/<%= equipos._id %>" method="post">
+		<p>Nombre: <input type="text" name="nombre" value="<%= equipos.Nombre %>" required></p>
+		<p>Competicion: <input type="text" name="com" value="<%= equipos.Competicion %>" required></p>
+		<p>Color1: <input type="text" name="col1" value="<%= equipos.Color1 %>" required></p>
+		<p>Color2: <input type="text" name="col2" value="<%= equipos.Color2 %>" required></p>
+		<input type="submit" value="Actualizar">
+	</form>
+<% } %>

@@ -1,0 +1,10 @@
+<a href="/lliga/crear">Añadir</a>
+<% if (typeof lliga	 !== 'undefined') { %>
+	<ul>
+	  <% lliga.forEach(function(lliga){ %>
+	  	<li>
+	    <a href="/lliga/ver/<%= lliga._id %>"><%= lliga.Nombre %></a>
+	    </li>
+	  <% }); %>
+	</ul>
+<% } %>
