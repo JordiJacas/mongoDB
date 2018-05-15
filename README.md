@@ -1,11 +1,13 @@
-Esqueleto de una aplicación web 
+Esqueleto de una aplicación web --- CRUD de lligas i equipos 
+
+
 1 - BBDD encendida
 
 sudo systemctl start mongod
 
 2 - Importar la BBDD:
 
-mongorestore -d videoJuegos ./dump_lliga/
+mongorestore -d video ./dump_lliga/
 
 3 - Instalar paquetes nodejs:
 
